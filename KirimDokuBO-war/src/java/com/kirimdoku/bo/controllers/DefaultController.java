@@ -5,10 +5,21 @@
  */
 package com.kirimdoku.bo.controllers;
 
+import org.springframework.http.HttpRequest;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 /**
  *
  * @author stevano
  */
+@Controller
 public class DefaultController {
-    
+    @RequestMapping(value="/", method = RequestMethod.GET)
+    public String index(ModelMap map,  HttpRequest request){
+        System.out.print("Masuk");
+        map.addAttribute("hello", "Hello Spring from DefaultController");
+        return "index";
+    }
 }
