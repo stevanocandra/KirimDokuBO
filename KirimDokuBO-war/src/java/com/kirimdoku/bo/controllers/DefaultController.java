@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class DefaultController {
     @RequestMapping(value="/", method = RequestMethod.GET)
-    public String index(ModelMap map,  HttpRequest request){
+    public String index(ModelMap map){
         System.out.print("Masuk");
         map.addAttribute("hello", "Hello Spring from DefaultController");
         return "index";
