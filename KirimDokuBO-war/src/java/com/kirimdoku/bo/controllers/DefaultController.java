@@ -5,7 +5,6 @@
  */
 package com.kirimdoku.bo.controllers;
 
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,10 +15,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class DefaultController {
+//    @RequestMapping(value="/", method = RequestMethod.GET)
+//    public String index(ModelMap map){
+//        System.out.print("Masuk");
+//        map.addAttribute("hello", "Hello Spring from DefaultController");
+//        return "index";
+//    }
+//    
+//    @RequestMapping(value="/person", method = RequestMethod.GET)
+//    public String person(ModelMap map){
+//        System.out.print("Masuk Person");
+//        map.addAttribute("person", "This is Persons");
+//        return "person";
+//    }
+    
     @RequestMapping(value="/", method = RequestMethod.GET)
-    public String index(ModelMap map){
-        System.out.print("Masuk");
-        map.addAttribute("hello", "Hello Spring from DefaultController");
+    public String free(ModelMap map){
+        System.out.print("Masuk Free");
+        map.addAttribute("free", "Hello from Freemarker");
         return "index";
     }
 }

@@ -12,4 +12,5 @@
     <system systemId="http://www.springframework.org/schema/beans/spring-beans-4.0.xsd" uri="www.springframework.org/schema/beans/spring-beans-4.0.xsd"/>
     <system systemId="http://www.springframework.org/schema/tool/spring-tool-4.0.xsd" uri="www.springframework.org/schema/tool/spring-tool-4.0.xsd"/>
     <system systemId="http://java.sun.com/xml/ns/javaee/web-app_2_0.xsd" uri="www.oracle.com/technetwork/java/index.html"/>
+    <system systemId="http://java.sun.com/xml/ns/javaee/web-app_3_5.xsd" uri="www.oracle.com/technetwork/java/index.html"/>
 </catalog>
